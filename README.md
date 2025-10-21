@@ -40,4 +40,9 @@ Notes on determinism and fallbacks:
 Next steps (optional):
 - Tune confidence heuristics further.
 - Expand NL->SQL patterns or enable dynamic model-driven SQL generation by installing a compatible `dspy`/`litellm` and ensuring Ollama is running.
-# rag
+
+Continuous verification (GitHub Actions):
+
+This repository includes a GitHub Actions workflow at `.github/workflows/verify.yml` that runs `scripts/verify_outputs.py` on pushes to `main`/`master` and on pull requests. The workflow installs dependencies and ensures `outputs_hybrid.jsonl` matches the sample questions' `format_hint` requirements.
+
+To enable CI, push these files to your GitHub repo (this repo already contains the workflow file). The Action will run automatically on new pushes.

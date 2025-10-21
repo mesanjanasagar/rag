@@ -1,0 +1,13 @@
+/.venv
+venv/
+*.pyc
+__pycache__/
+.DS_Store
+.pytest_cache/
+outputs_bundle.zip
+project_bundle.zip
+*.sqlite-journal
+.env
+/.idea
+.vscode
+.mypy_cache
